@@ -1,0 +1,31 @@
+<FormScreen>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+
+    TextInput:
+        id: name_input
+        hint_text: "Enter your name"
+        multiline: False
+        size_hint_y: None
+        height: 50
+
+    TextInput:
+        id: email_input
+        hint_text: "Enter your email"
+        multiline: False
+        size_hint_y: None
+        height: 50
+
+    Button:
+        text: "Submit"
+        size_hint_y: None
+        height: 50
+        on_press: root.submit()
+
+    Button:
+        text: "Show All Users"
+        size_hint_y: None
+        height: 50
+        on_press: root.display_users()
+ 
